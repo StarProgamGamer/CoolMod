@@ -1,0 +1,22 @@
+name: CoolMod
+version: 0.5.0
+author: StarProgamGamer
+main: CoolMod\CoolMod
+commands:
+ checkop:
+  description: Checks if the target player is OP
+  permission: CM.command.checkop
+  usage: /checkop <player>
+ cpgms:
+  description: Changes gamemode of all players apart from command user
+  permission: CM.command.cpgms
+  usage: /cpgms <player>
+permissions:
+ CM.command.checkop:
+  description: Checks if the target player is OP
+  default: op
+ CM.command.cpgms:
+  description: Changes gamemode of all players
+  default: op
+api: 2.0.0
+  
