@@ -7,16 +7,23 @@ commands:
   description: Checks if the target player is OP
   permission: CM.command.checkop
   usage: /checkop <player>
- cpgms:
-  description: Changes gamemode of all players apart from command user
-  permission: CM.command.cpgms
-  usage: /cpgms <player>
+ bcast:
+  description: Broadcasts a message
+  permission: BCast.command
+  usage: /bcast <message>
+ bpopup:
+  description: Broadcasts a popup
+  permission: BPopup.command
+  usage: /bpopup <message> (it only works when there is at least one player online)
 permissions:
  CM.command.checkop:
   description: Checks if the target player is OP
   default: op
- CM.command.cpgms:
-  description: Changes gamemode of all players
+ BCast.command:
+  description: Broadcasts a popup
+  default: op
+ BPopup.command:
+  description: Broadcasts a popup
   default: op
 api: 2.0.0
   
